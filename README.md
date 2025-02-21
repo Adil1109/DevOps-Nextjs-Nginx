@@ -38,6 +38,12 @@ sudo npm install -g pm2@latest
 sudo pm2 startup
 ```
 
+- Save pm2 config
+
+```sh
+pm2 save
+```
+
 - Verify Nginx is Active and Running
 
 ```sh
