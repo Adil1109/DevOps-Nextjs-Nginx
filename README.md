@@ -56,6 +56,19 @@ sudo service nginx status
 sudo ufw status verbose
 ```
 
+If you get Inactive run these commands:
+```sh
+sudo ufw enable
+sudo ufw allow OpenSSH
+sudo ufw allow 2222/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 3306/tcp
+sudo ufw allow 21/tcp
+sudo ufw reload
+sudo systemctl enable ufw
+```
+
 - Exit from Remote Server
 
 ```sh
