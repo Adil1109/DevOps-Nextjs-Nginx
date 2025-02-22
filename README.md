@@ -291,23 +291,9 @@ sudo systemctl status certbot.timer
 sudo certbot renew --dry-run
 ```
 
-server {
-listen 80;
-listen [::]:80;
-server_name www.purpledrafts.com purpledrafts.com;
+Redirect user to www domain to non-www domain
+
 return 301 https://purpledrafts.com$request_uri;
-}
-
-server {
-listen 443 ssl;
-listen [::]:443 ssl;
-server_name www.purpledrafts.com;
-
-    ssl_certificate /etc/letsencrypt/live/purpledrafts.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/purpledrafts.com/privkey.pem;
-    return 301 https://purpledrafts.com$request_uri;
-
-}
 
 server {
 ...
