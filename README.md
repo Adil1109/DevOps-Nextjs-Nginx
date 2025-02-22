@@ -446,6 +446,11 @@ cd ~/project_folder_name
 git pull
 ```
 
+If necessary run this on your vps root project folder if you get permission denied error in github actions section
+```ssh
+cmod +x .scripts/deploy.sh
+```
+
 - Your Deployment should become automate.
 - On Local Machine make some changes in Your Project then Commit and Push to Github Repo It will automatically deployed on Live Server
 - You can track your action from Github Actions Tab
