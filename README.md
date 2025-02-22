@@ -294,7 +294,7 @@ sudo certbot renew --dry-run
 Redirect user to www domain to non-www domain
 for that run
 ```sh
-sudo nano ~/etc/nginx/sites-available/purpledrafts.com
+sudo nano /etc/nginx/sites-available/purpledrafts.com
 ```
 
 return 301 https://purpledrafts.com$request_uri;
