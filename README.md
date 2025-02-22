@@ -448,7 +448,7 @@ git pull
 
 If necessary run this on your vps root project folder if you get permission denied error in github actions section
 ```ssh
-cmod +x .scripts/deploy.sh
+chmod +x .scripts/deploy.sh
 ```
 
 - Your Deployment should become automate.
